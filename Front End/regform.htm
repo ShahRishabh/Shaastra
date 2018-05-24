@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2>Registration Form</h2>
+        <form name="shaastra" onsubmit="return check()">
+            <b>First Name:</b><br>
+            <input type="text" name="firstname" required><br>
+            <b>Last Name:</b><br>
+            <input type="text" name="lastname" required><br>
+            <b>Shaastra ID:</b><br>
+            <input type="text" name="shaastraid" required><br>
+            <b>Mobile No.:</b><br>
+            <input type="number" name="mobileno" pattern="[0-9]" required><br>
+            <b>Email:</b><br>
+            <input type="email" name="email" required><br>
+            <b>State:</b><br>
+            <input list="states" required>
+            <datalist id="states">
+                <option value="Andhra Pradesh">
+                <option value="Arunachal Pradesh">
+                <option value="Assam">
+                <option value="Bihar">
+                <option value="Chhatisgarh">
+                <option value="Goa">
+                <option value="Gujarat">
+                <option value="Haryana">
+                <option value="Himachal Pradesh">
+                <option value="Jammu & Kashmir">
+                <option value="Jharkhand">
+                <option value="Karnataka">
+                <option value="Kerela">
+                <option value="Madhya Pradesh">
+                <option value="Maharashtra">
+                <option value="Manipur">
+                <option value="Meghalaya">
+                <option value="Mizoram">
+                <option value="Nagaland">
+                <option value="Odisha">
+                <option value="Punjab">
+                <option value="Rajasthan">
+                <option value="Sikkim">
+                <option value="Tamil Nadu">
+                <option value="Telangana">
+                <option value="Tripura">
+                <option value="Uttarakhand">
+                <option value="Uttar Pradesh">
+                <option value="West Bengal">
+            </datalist><br>
+            <b>Password:</b><br>
+            <input type="password" min="6" name="pswd" required><br>
+            <b>Confirm Password:</b><br>
+            <input type="password" name="pswdcon" required><br><br><br>
+            <input type="submit" value="Register">
+        </form>
+        <script src="validation.js"></script>
+    </body>
+</html>
